@@ -133,8 +133,19 @@ blogRouter.get("/:id",async(c)=>{
     where:{
         id:id
     },
+    select: {
+      content: true,
+      title: true,
+      id: true,
+      author: {
+        select: {
+          name: true
+        }
+      }
+    }
+    
     })
-    return c.json(blog)
+    return c.json({blog})
   } catch (error) {
     console.log(error)
   }

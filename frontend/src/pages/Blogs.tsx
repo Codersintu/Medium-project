@@ -12,7 +12,7 @@ export default function Blogs() {
         <Appbar/>
     <div className="flex justify-center">
     <div className=" max-w-xl ">
-      {blogs.map(b=> <BlogCard title={b.title}
+      {blogs.map(b=> <BlogCard id={b.id} title={b.title}
      authorName={b.author.name || "anonymous"} 
      content={b.content} 
      publishedDate={"02 june 2025"}/>
