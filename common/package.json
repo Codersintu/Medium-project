@@ -3,7 +3,7 @@
     "zod": "^3.25.67"
   },
   "name": "zod-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "devDependencies": {},
   "scripts": {

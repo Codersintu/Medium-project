@@ -23,11 +23,9 @@ if (!success) {
   })
 }
 
-  const prisma = new PrismaClient({
+const prisma = new PrismaClient({
     datasourceUrl:c.env.DATABASE_URL,
 }).$extends(withAccelerate())
-
-
 
 try {
   const user=await prisma.user.create({
